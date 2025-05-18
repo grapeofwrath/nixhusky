@@ -333,7 +333,7 @@
     packageDefinitions = {
       # the name here is the name of the package
       # and also the default command name for it.
-      nixCats = { pkgs, name, ... }@misc: {
+      nvim = { pkgs, name, ... }@misc: {
         # these also recieve our pkgs variable
         # see :help nixCats.flake.outputs.packageDefinitions
         settings = {
@@ -448,7 +448,7 @@
       };
     };
 
-    defaultPackageName = "nixCats";
+    defaultPackageName = "nvim";
     # I did not here, but you might want to create a package named nvim.
 
     # defaultPackageName is also passed to utils.mkNixosModules and utils.mkHomeModules
